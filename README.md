@@ -33,8 +33,8 @@ The "kace_device_checkin_automator.py" script automates the process of forcing d
 - The script uses `psexec.exe` to remotely execute commands on devices. Make sure that `psexec.exe` is available and properly configured on the system.
 
 ## Author
-- **Author**: [Your Name]
-- **Date**: [Date]
+- **Author**: Joshua Hemingway
+- **Date**: 7/2/2021
 
 Feel free to modify and customize the script to suit your specific requirements.
 
