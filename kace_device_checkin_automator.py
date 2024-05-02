@@ -1,5 +1,6 @@
 # Joshua Hemingway
 # Force devices with KACE agent 9.0+ and > 14 to check into KACE.
+#7/2/2021
 
 # Import necessary modules.
 import os
@@ -32,9 +33,9 @@ def ampTools(test, user):
     os.chdir("C:\\Program Files (x86)\\Quest\\KACE\\")
     # Run conf.
     file1 = open("C:\\Users\\" + user + "\\Downloads\\Kace_Inv_Log.txt", "a")  # Append mode.
-    file1.write("\n\nRunning AMPTools.exe -resetconf host=nkhelpdesk.northkey.org")
+    file1.write("\n\nRunning AMPTools.exe -resetconf host=**YOURHOSTNAME**")
     file1.close()
-    os.system('psexec.exe \\\\' + test + " cmd /c " + runamp + ' -resetconf host=nkhelpdesk.northkey.org 1>> C:\\Users\\' + user + '\\Downloads\\Kace_Inv_Log.txt 2>>&1')
+    os.system('psexec.exe \\\\' + test + " cmd /c " + runamp + ' -resetconf host=**YOURHOSTNAME** 1>> C:\\Users\\' + user + '\\Downloads\\Kace_Inv_Log.txt 2>>&1')
     # Run InvUpdate.
     InvUpdate(test, user)
 
